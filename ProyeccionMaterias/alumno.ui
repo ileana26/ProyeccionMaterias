@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>alumno</class>
+ <widget class="QDialog" name="alumno">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>721</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>721</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(0, 59, 92);
+}
+
+QLabel{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: white;
+}
+
+QLineEdit{
+	background-color: white;
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+}
+
+QLineEdit:Hover{
+	border: 2px solid rgb(77, 188, 198);
+}
+
+QCheckBox{
+	color: white;
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+}
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>7</number>
+   </property>
+   <widget class="QWidget" name="CambioContrasenia">
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(0, 59, 92);
+}
+
+QLabel{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: white;
+}
+
+QLineEdit{
+	background-color: white;
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+}
+
+QLineEdit:Hover{
+	border: 2px solid rgb(77, 188, 198);
+}
+
+QCheckBox{
+	color: white;
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+}</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>160</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nueva contraseña :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LineEditNuevaContrasea">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>160</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>230</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Confirmar Contraseña: </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LineEditConfirmarContrasenia">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>230</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Aceptar">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>330</y>
+       <width>361</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: white;
+	border: none;
+	font: 11pt &quot;Franklin Gothic Book&quot;;
+}
+
+QPushButton:Hover{
+	border: 2px solid rgb(77, 188, 198);
+}</string>
+     </property>
+     <property name="text">
+      <string>Aceptar</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>80</y>
+       <width>251</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;Franklin Gothic Demi&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Cambiar contraseña</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>280</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mostrar contraseña</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>211</width>
+       <height>451</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;</string>
+     </property>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>181</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;
+border: none;
+image: url(:/logos/img/logoFcc.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="perfil">
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>30</y>
+       <width>150</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: none;
+border: none;
+image: url(:/logos/img/perfil.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelnombre">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>220</y>
+       <width>351</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+	border: none;
+	font: 11pt &quot;Franklin Gothic Book&quot;;
+color: black;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelID">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>190</y>
+       <width>351</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+	border: none;
+	font: 11pt &quot;Franklin Gothic Book&quot;;
+   color: black;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>220</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre completo:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelmatricula">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>250</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+	border: none;
+	font: 11pt &quot;Franklin Gothic Book&quot;;
+color: black;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>190</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Id Alumno:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>250</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Matrícula:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCambiar">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>300</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: white;
+	border: none;
+	font: 11pt &quot;Franklin Gothic Book&quot;;
+}
+
+QPushButton:Hover{
+	border: 2px solid rgb(77, 188, 198);
+}</string>
+     </property>
+     <property name="text">
+      <string>Cambiar contraseña</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="mapa">
+    <widget class="QGraphicsView" name="MapaITI">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>641</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>350</y>
+       <width>160</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>8</number>
+     </property>
+     <property name="maximum">
+      <number>15</number>
+     </property>
+     <property name="value">
+      <number>10</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>350</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/logos/img/lupa3.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Materias">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QStackedWidget" name="stkMaterias">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>721</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QTableWidget" name="tablaMatAtrasada">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>10</y>
+         <width>601</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QTableWidget" name="tabla_materias">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>140</y>
+         <width>591</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: white;
+	border: none;
+	font: 11pt &quot;Franklin Gothic Book&quot;;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>80</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Alumno:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nombrealumno">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>80</y>
+         <width>331</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: white;
+	border: none;
+	font: 11pt &quot;Franklin Gothic Book&quot;;
+   color: black;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>30</y>
+         <width>311</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;Franklin Gothic Demi&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Visualización de materias</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="materias">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>10</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	background-color: white;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+     </property>
+     <property name="text">
+      <string>Materias atrasadas</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	background-color: white;
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+     </property>
+     <property name="text">
+      <string>Materias en curso</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="MateriasEnCurso"/>
+   <widget class="QWidget" name="Proyeccion">
+    <widget class="QStackedWidget" name="stkProyeccion">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>721</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="page_3">
+      <widget class="QTableWidget" name="tabla_proyeccion">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>681</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: white;
+	border: none;
+	font: 11pt &quot;Franklin Gothic Book&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <widget class="QListWidget" name="proyeccion">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>295</width>
+         <height>301</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt 'Franklin Gothic Book'; 
+background-color: white;</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="seleccion">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>20</y>
+         <width>295</width>
+         <height>301</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt 'Franklin Gothic Book'; 
+background-color: white;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	background-color: white;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+     </property>
+     <property name="text">
+      <string>Proyecccion ideal</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>215</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	background-color: white;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+     </property>
+     <property name="text">
+      <string>Proyecccion real</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Imprimir">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>30</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	background-color: white;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}</string>
+     </property>
+     <property name="text">
+      <string>Imprimir</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Proyeccionrecomendada"/>
+   <widget class="QWidget" name="Busqueda">
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>30</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;Franklin Gothic Demi&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Busqueda de materias</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>100</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;Franklin Gothic Demi&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Nombre:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="nombremateria">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>100</y>
+       <width>341</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tabla_busqueda">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>661</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+	border: none;
+	font: 11pt &quot;Franklin Gothic Book&quot;;
+color:black;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>721</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/logos/img/600px-Escudobuappositivo2.png);
+background-color: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>0</y>
+      <width>75</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/logos/img/logoFcc.png);
+background-color: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPerfil">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>30</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	backgound-color: none;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+    </property>
+    <property name="text">
+     <string>Perfil</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>95</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	backgound-color: none;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+    </property>
+    <property name="text">
+     <string>Mapa gráfico</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Salir">
+    <property name="geometry">
+     <rect>
+      <x>619</x>
+      <y>30</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	backgound-color: none;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	backgound-color: none;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+    </property>
+    <property name="text">
+     <string>Proyección</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMaterias">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	backgound-color: none;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+    </property>
+    <property name="text">
+     <string>Materias</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+	color: rgb(0, 59, 92);
+	backgound-color: none;
+	border-left: 1px solid rgb(0, 59, 92);
+	border-right: 1px solid rgb(0, 59, 92);
+	border-top: none;
+	border-bottom: none;
+}
+
+QPushButton:Hover{
+	background-color:qlineargradient(spread:pad, x1:0.523, y1:1, x2:0.511, y2:0.313, stop:0 rgba(209, 209, 209, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+    </property>
+    <property name="text">
+     <string>Busqueda</string>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionZoominOut">
+   <property name="text">
+    <string>ZoominOut</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

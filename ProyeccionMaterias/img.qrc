@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/logos">
+        <file>img/600px-Escudobuappositivo2.png</file>
+        <file>img/EscudoPartido.png</file>
+        <file>img/FCC.png</file>
+        <file>img/logoFcc.png</file>
+        <file>img/splashscreenV1.jpg</file>
+        <file>img/buscaralumno.png</file>
+        <file>img/mapagrafico.png</file>
+        <file>img/lupa.png</file>
+        <file>img/lupa2.png</file>
+        <file>img/lupa3.png</file>
+        <file>img/Mapa.jpg</file>
+        <file>img/perfil.png</file>
+    </qresource>
+</RCC>
